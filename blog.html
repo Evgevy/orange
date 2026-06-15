@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ion-rangeslider/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+
+    <header class="header sticky-top">
+        <div class="header-main">
+            <div class="container">
+
+                <div class="header-main-content d-flex justify-content-between align-items-center">
+
+                    <a href="#" class="logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </a>
+                    <nav class="main-nav d-none d-xxl-block">
+                        <ul class="nav header-list gap-4">
+                            <li class="nav-item"><a href="#" class="nav-link p-0">О компании</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link p-0">Объекты</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link p-0">Инвесторам</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link p-0">Управляющая компания</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link p-0">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions align-items-center d-none d-lg-flex">
+
+                        <a href="tel:+88003333275" class="header-phone">
+                            8-800-333-32-75
+                        </a>
+
+                        <div class="header-socials d-flex gap-2">
+                            <button class="header-btn btn-orange" data-bs-toggle="modal" data-bs-target="#consultModal">
+                                Заказать звонок
+                            </button>
+                            <a href="#" class="header-lk">
+                                <svg width="42" height="41" viewBox="0 0 42 41" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="42" height="41" rx="20.5" fill="#5546AA" />
+                                    <path
+                                        d="M21 20.064C19.7781 20.064 18.7407 19.6376 17.8879 18.7848C17.0348 17.9317 16.6083 16.8942 16.6083 15.6724C16.6083 14.4505 17.0348 13.4131 17.8879 12.5603C18.7407 11.7072 19.7781 11.2807 21 11.2807C22.2218 11.2807 23.2592 11.7072 24.112 12.5603C24.9651 13.4131 25.3916 14.4505 25.3916 15.6724C25.3916 16.8942 24.9651 17.9317 24.112 18.7848C23.2592 19.6376 22.2218 20.064 21 20.064ZM11.5083 27.8504V27.1364C11.5083 26.7024 11.6377 26.2843 11.8965 25.8819C12.1552 25.4796 12.5172 25.1313 12.9823 24.8371C14.2172 24.1272 15.5151 23.5828 16.8761 23.2041C18.237 22.8254 19.6092 22.636 20.9925 22.636C22.3759 22.636 23.7505 22.8254 25.1164 23.2041C26.4823 23.5828 27.7827 24.1272 29.0176 24.8371C29.4827 25.1077 29.8447 25.4501 30.1035 25.8642C30.3622 26.2784 30.4916 26.7024 30.4916 27.1364V27.8504C30.4916 28.3698 30.3099 28.8112 29.9466 29.1746C29.583 29.5378 29.1412 29.7193 28.6213 29.7193H13.3673C12.8472 29.7193 12.4073 29.5378 12.0477 29.1746C11.6881 28.8112 11.5083 28.3698 11.5083 27.8504ZM13.35 27.8777H28.65V27.1364C28.65 26.9869 28.5961 26.8463 28.4885 26.7146C28.3806 26.5828 28.2319 26.471 28.0426 26.3792C27.0108 25.7544 25.8961 25.2813 24.6985 24.9597C23.5007 24.6383 22.2679 24.4777 21 24.4777C19.7321 24.4777 18.4992 24.6383 17.3014 24.9597C16.1038 25.2813 14.9892 25.7544 13.9574 26.3792C13.7668 26.51 13.618 26.6352 13.5108 26.7549C13.4036 26.8747 13.35 27.0018 13.35 27.1364V27.8777ZM21.0074 18.2224C21.7108 18.2224 22.3104 17.972 22.8062 17.4712C23.3021 16.9704 23.55 16.3683 23.55 15.6649C23.55 14.9616 23.2996 14.362 22.7988 13.8661C22.298 13.3703 21.6959 13.1224 20.9925 13.1224C20.2892 13.1224 19.6896 13.3729 19.1937 13.8739C18.6979 14.3747 18.45 14.9768 18.45 15.6802C18.45 16.3833 18.7004 16.9828 19.2012 17.4786C19.7019 17.9745 20.304 18.2224 21.0074 18.2224Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <a href="#" class="header-lang">
+                            <span>ru</span>
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38 19C38 29.4934 29.4934 38 19 38C8.50659 38 0 29.4934 0 19C0 8.50659 8.50659 0 19 0C29.4934 0 38 8.50659 38 19Z"
+                                    fill="#D9D9D9" />
+                                <path
+                                    d="M19 36.8125C28.8376 36.8125 36.8125 28.8376 36.8125 19C36.8125 9.16243 28.8376 1.1875 19 1.1875C9.16243 1.1875 1.1875 9.16243 1.1875 19C1.1875 28.8376 9.16243 36.8125 19 36.8125Z"
+                                    fill="#F0F0F0" />
+                                <path
+                                    d="M35.705 25.1948C36.421 23.2652 36.8125 21.1788 36.8125 19C36.8125 16.8212 36.421 14.7333 35.705 12.8036H2.29583C1.57985 14.7333 1.1875 16.8212 1.1875 19C1.1875 21.1788 1.57985 23.2652 2.29583 25.1948L19.0004 26.7437L35.705 25.1948Z"
+                                    fill="#0052B4" />
+                                <path
+                                    d="M19 36.8125C26.6587 36.8125 33.1882 31.9778 35.705 25.1948H2.29583C4.81261 31.9778 11.3413 36.8125 19 36.8125Z"
+                                    fill="#D80027" />
+                            </svg>
+                        </a>
+
+
+                    </div>
+                    <div class="header-icons d-flex d-lg-none">
+                        <a href="#" class="header-lk">
+                            <svg width="42" height="41" viewBox="0 0 42 41" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="42" height="41" rx="20.5" fill="#5546AA" />
+                                <path
+                                    d="M21 20.064C19.7781 20.064 18.7407 19.6376 17.8879 18.7848C17.0348 17.9317 16.6083 16.8942 16.6083 15.6724C16.6083 14.4505 17.0348 13.4131 17.8879 12.5603C18.7407 11.7072 19.7781 11.2807 21 11.2807C22.2218 11.2807 23.2592 11.7072 24.112 12.5603C24.9651 13.4131 25.3916 14.4505 25.3916 15.6724C25.3916 16.8942 24.9651 17.9317 24.112 18.7848C23.2592 19.6376 22.2218 20.064 21 20.064ZM11.5083 27.8504V27.1364C11.5083 26.7024 11.6377 26.2843 11.8965 25.8819C12.1552 25.4796 12.5172 25.1313 12.9823 24.8371C14.2172 24.1272 15.5151 23.5828 16.8761 23.2041C18.237 22.8254 19.6092 22.636 20.9925 22.636C22.3759 22.636 23.7505 22.8254 25.1164 23.2041C26.4823 23.5828 27.7827 24.1272 29.0176 24.8371C29.4827 25.1077 29.8447 25.4501 30.1035 25.8642C30.3622 26.2784 30.4916 26.7024 30.4916 27.1364V27.8504C30.4916 28.3698 30.3099 28.8112 29.9466 29.1746C29.583 29.5378 29.1412 29.7193 28.6213 29.7193H13.3673C12.8472 29.7193 12.4073 29.5378 12.0477 29.1746C11.6881 28.8112 11.5083 28.3698 11.5083 27.8504ZM13.35 27.8777H28.65V27.1364C28.65 26.9869 28.5961 26.8463 28.4885 26.7146C28.3806 26.5828 28.2319 26.471 28.0426 26.3792C27.0108 25.7544 25.8961 25.2813 24.6985 24.9597C23.5007 24.6383 22.2679 24.4777 21 24.4777C19.7321 24.4777 18.4992 24.6383 17.3014 24.9597C16.1038 25.2813 14.9892 25.7544 13.9574 26.3792C13.7668 26.51 13.618 26.6352 13.5108 26.7549C13.4036 26.8747 13.35 27.0018 13.35 27.1364V27.8777ZM21.0074 18.2224C21.7108 18.2224 22.3104 17.972 22.8062 17.4712C23.3021 16.9704 23.55 16.3683 23.55 15.6649C23.55 14.9616 23.2996 14.362 22.7988 13.8661C22.298 13.3703 21.6959 13.1224 20.9925 13.1224C20.2892 13.1224 19.6896 13.3729 19.1937 13.8739C18.6979 14.3747 18.45 14.9768 18.45 15.6802C18.45 16.3833 18.7004 16.9828 19.2012 17.4786C19.7019 17.9745 20.304 18.2224 21.0074 18.2224Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                        <a href="#" class="header-lang">
+                            <span>ru</span>
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38 19C38 29.4934 29.4934 38 19 38C8.50659 38 0 29.4934 0 19C0 8.50659 8.50659 0 19 0C29.4934 0 38 8.50659 38 19Z"
+                                    fill="#D9D9D9" />
+                                <path
+                                    d="M19 36.8125C28.8376 36.8125 36.8125 28.8376 36.8125 19C36.8125 9.16243 28.8376 1.1875 19 1.1875C9.16243 1.1875 1.1875 9.16243 1.1875 19C1.1875 28.8376 9.16243 36.8125 19 36.8125Z"
+                                    fill="#F0F0F0" />
+                                <path
+                                    d="M35.705 25.1948C36.421 23.2652 36.8125 21.1788 36.8125 19C36.8125 16.8212 36.421 14.7333 35.705 12.8036H2.29583C1.57985 14.7333 1.1875 16.8212 1.1875 19C1.1875 21.1788 1.57985 23.2652 2.29583 25.1948L19.0004 26.7437L35.705 25.1948Z"
+                                    fill="#0052B4" />
+                                <path
+                                    d="M19 36.8125C26.6587 36.8125 33.1882 31.9778 35.705 25.1948H2.29583C4.81261 31.9778 11.3413 36.8125 19 36.8125Z"
+                                    fill="#D80027" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <button class="burger-menu d-block d-xxl-none" id="burgerBtn">
+                        ☰
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="container">
+                <button type="button" class="m-close">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1.12117" y1="1.29289" x2="17.1212" y2="17.2929" stroke="#1C1C1C" stroke-width="2" />
+                        <line y1="-1" x2="22.6274" y2="-1"
+                            transform="matrix(-0.707107 0.707107 0.707107 0.707107 17.4141 2)" stroke="#1C1C1C"
+                            stroke-width="2" />
+                    </svg>
+                </button>
+                <nav class="main-nav d-block d-xxl-none">
+                    <ul class="nav header-list gap-4">
+                        <li class="nav-item"><a href="#" class="nav-link p-0">О компании</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Объекты</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Инвесторам</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Управляющая компания</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link p-0">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions d-flex align-items-center gap-3 main-nav d-block d-lg-none">
+
+                    <a href="tel:+88003333275" class="header-phone">
+                        +8-800-333-32-75
+                    </a>
+
+                    <div class="header-socials d-flex gap-2">
+                        <button class="header-btn btn-orange" data-bs-toggle="modal" data-bs-target="#consultModal">
+                            Заказать звонок
+                        </button>
+
+
+                        <!-- <button class="header-btn btn-green" data-bs-toggle="modal" data-bs-target="#consultModal">
+                            Написать
+                        </button> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog-top">
+                    <div class="blog-bg">
+                        <img src="img/blog-bg.png" alt="Фон">
+                    </div>
+                    <nav class="breadcrumbs">
+
+                        <ul class="breadcrumbs-list">
+                            <li><a href="#">Главная</a></li>
+                            <li><span>Блог</span></li>
+                        </ul>
+
+
+                    </nav>
+                    <h1 class="blog-title title">БЛОГ</h1>
+                    <p class="blog-text">компании <span>Orange Group</span></p>
+                </div>
+                <div class="blog-content">
+                    <div class="row blog-list">
+
+                        <!-- Карточка 1 -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <article class="blog-card">
+                                <div class="blog-card-img">
+                                    <img src="img/blog1.png" alt="Заглушка фото">
+                                </div>
+                                <div class="blog-card-body">
+                                    <time class="blog-card-date">Опубликовано: 18.03.2026</time>
+                                    <h3 class="blog-card-title">Многофункциональный комплекс как новая модель
+                                        коммерческой недвижимости</h3>
+                                    <p class="blog-card-text">
+                                        Рынок коммерческой недвижимости постепенно меняется. Если раньше основным
+                                        форматом для размещения бизнеса считались классические бизнес-центры,
+                                        то&nbsp;сегодня всё чаще...
+                                    </p>
+                                    <a href="#" class="blog-card-btn">Читать</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Карточка 2 -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <article class="blog-card">
+                                <div class="blog-card-img">
+                                    <img src="img/blog2.png" alt="Заглушка фото">
+                                </div>
+                                <div class="blog-card-body">
+                                    <time class="blog-card-date">Опубликовано: 18.03.2026</time>
+                                    <h3 class="blog-card-title">Многофункциональный комплекс как новая модель
+                                        коммерческой недвижимости</h3>
+                                    <p class="blog-card-text">
+                                        Рынок коммерческой недвижимости постепенно меняется. Если раньше основным
+                                        форматом для размещения бизнеса считались классические бизнес-центры,
+                                        то&nbsp;сегодня всё чаще...
+                                    </p>
+                                    <a href="#" class="blog-card-btn">Читать</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Карточка 3 -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <article class="blog-card">
+                                <div class="blog-card-img">
+                                    <img src="img/blog3.png" alt="Заглушка фото">
+                                </div>
+                                <div class="blog-card-body">
+                                    <time class="blog-card-date">Опубликовано: 18.03.2026</time>
+                                    <h3 class="blog-card-title">Многофункциональный комплекс как новая модель
+                                        коммерческой недвижимости</h3>
+                                    <p class="blog-card-text">
+                                        Рынок коммерческой недвижимости постепенно меняется. Если раньше основным
+                                        форматом для размещения бизнеса считались классические бизнес-центры,
+                                        то&nbsp;сегодня всё чаще...
+                                    </p>
+                                    <a href="#" class="blog-card-btn">Читать</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Карточка 4 -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <article class="blog-card">
+                                <div class="blog-card-img">
+                                    <img src="img/blog1.png" alt="Заглушка фото">
+                                </div>
+                                <div class="blog-card-body">
+                                    <time class="blog-card-date">Опубликовано: 18.03.2026</time>
+                                    <h3 class="blog-card-title">Многофункциональный комплекс как новая модель
+                                        коммерческой недвижимости</h3>
+                                    <p class="blog-card-text">
+                                        Рынок коммерческой недвижимости постепенно меняется. Если раньше основным
+                                        форматом для размещения бизнеса считались классические бизнес-центры,
+                                        то&nbsp;сегодня всё чаще...
+                                    </p>
+                                    <a href="#" class="blog-card-btn">Читать</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Карточка 5 -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <article class="blog-card">
+                                <div class="blog-card-img">
+                                    <img src="img/blog2.png" alt="Заглушка фото">
+                                </div>
+                                <div class="blog-card-body">
+                                    <time class="blog-card-date">Опубликовано: 18.03.2026</time>
+                                    <h3 class="blog-card-title">Многофункциональный комплекс как новая модель
+                                        коммерческой недвижимости</h3>
+                                    <p class="blog-card-text">
+                                        Рынок коммерческой недвижимости постепенно меняется. Если раньше основным
+                                        форматом для размещения бизнеса считались классические бизнес-центры,
+                                        то&nbsp;сегодня всё чаще...
+                                    </p>
+                                    <a href="#" class="blog-card-btn">Читать</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Карточка 6 -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <article class="blog-card">
+                                <div class="blog-card-img">
+                                    <img src="img/blog3.png" alt="Заглушка фото">
+                                </div>
+                                <div class="blog-card-body">
+                                    <time class="blog-card-date">Опубликовано: 18.03.2026</time>
+                                    <h3 class="blog-card-title">Многофункциональный комплекс как новая модель
+                                        коммерческой недвижимости</h3>
+                                    <p class="blog-card-text">
+                                        Рынок коммерческой недвижимости постепенно меняется. Если раньше основным
+                                        форматом для размещения бизнеса считались классические бизнес-центры,
+                                        то&nbsp;сегодня всё чаще...
+                                    </p>
+                                    <a href="#" class="blog-card-btn">Читать</a>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <a href="/" class="footer-logo">
+                        <img src="img/footer-logo.svg" alt="Лого">
+                        <span>by Orange Group</span>
+                    </a>
+                    <div class="footer-soc">
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 17.25C0 9.15 0 5.025 2.55 2.55C5.1 0.0750001 9.15 0 17.25 0H18.75C26.925 0 30.975 0 33.525 2.55C36 5.025 36 9.15 36 17.25V18.75C36 26.925 36 30.975 33.45 33.525C30.975 36 26.85 36 18.75 36H17.25C9.075 36 5.025 36 2.475 33.45C0 30.975 0 26.85 0 18.75V17.25Z"
+                                    fill="white" />
+                                <path
+                                    d="M19.1252 25.9492C10.9502 25.9492 6.2252 20.3242 6.0752 10.9492H10.2002C10.3502 17.8492 13.3502 20.6992 15.7502 21.2992V10.9492H19.6502V16.8742C22.0502 16.6492 24.5252 13.9492 25.3502 10.9492H29.2502C28.5752 14.6242 25.8752 17.3242 24.0002 18.4492C25.9502 19.3492 29.0252 21.6742 30.1502 25.9492H25.8752C24.9752 23.0992 22.6502 20.9242 19.6502 20.6242V25.9492H19.1252Z"
+                                    fill="#5546AA" />
+                            </svg>
+                            <span>vk.com/proorangelife</span>
+                        </a>
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 17.25C0 9.15 0 5.025 2.55 2.55C5.1 0.0750001 9.15 0 17.25 0H18.75C26.925 0 30.975 0 33.525 2.55C36 5.025 36 9.15 36 17.25V18.75C36 26.925 36 30.975 33.45 33.525C30.975 36 26.85 36 18.75 36H17.25C9.075 36 5.025 36 2.475 33.45C0 30.975 0 26.85 0 18.75V17.25Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.87922 17.3509C15.0046 15.1179 18.4223 13.6457 20.1323 12.9344C25.0148 10.9036 26.0294 10.5509 26.6907 10.5392C26.8361 10.5367 27.1613 10.5727 27.372 10.7436C27.5498 10.888 27.5988 11.083 27.6221 11.2198C27.6456 11.3566 27.6747 11.6683 27.6515 11.9119C27.387 14.6919 26.2421 21.4383 25.6596 24.552C25.4132 25.8695 24.9279 26.3113 24.4581 26.3545C23.4372 26.4485 22.6618 25.6798 21.673 25.0315C20.1256 24.0172 19.2515 23.3858 17.7494 22.396C16.0136 21.2521 17.1388 20.6234 18.1281 19.5959C18.387 19.327 22.8855 15.2353 22.9725 14.8641C22.9834 14.8177 22.9935 14.6447 22.8907 14.5533C22.7879 14.4619 22.6362 14.4932 22.5267 14.518C22.3715 14.5533 19.8995 16.1872 15.1108 19.4197C14.4091 19.9015 13.7736 20.1363 13.2041 20.124C12.5764 20.1104 11.3689 19.769 10.4712 19.4772C9.37016 19.1193 8.49508 18.9301 8.57128 18.3222C8.61097 18.0057 9.04695 17.6819 9.87922 17.3509Z"
+                                    fill="#5546AA" />
+                            </svg>
+                            <span>@proorangelife</span>
+                        </a>
+                        <a href="#">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 17.25C0 9.15 0 5.025 2.55 2.55C5.1 0.0750001 9.15 0 17.25 0H18.75C26.925 0 30.975 0 33.525 2.55C36 5.025 36 9.15 36 17.25V18.75C36 26.925 36 30.975 33.45 33.525C30.975 36 26.85 36 18.75 36H17.25C9.075 36 5.025 36 2.475 33.45C0 30.975 0 26.85 0 18.75V17.25Z"
+                                    fill="white" />
+                                <path
+                                    d="M7 16.8786C7.03515 16.7704 7.05366 16.0634 7.06411 15.9063C7.11875 15.0933 7.20748 14.283 7.33007 13.4774C7.4245 12.8572 7.47108 12.3938 7.82005 11.846C8.21843 11.2195 8.85294 10.7806 9.57962 10.6286C10.184 10.4965 11.0664 10.4276 11.687 10.3842C12.905 10.3061 14.1248 10.2574 15.3452 10.2379C17.7987 10.1841 20.2532 10.2054 22.7054 10.3018C23.4337 10.3292 24.1614 10.3721 24.888 10.4306C25.3908 10.4728 25.9049 10.5258 26.4004 10.622C26.7505 10.6899 27.0635 10.8145 27.3641 11.009C27.8404 11.3183 28.2112 11.7652 28.4273 12.2903C28.5842 12.6674 28.6203 13.0512 28.6805 13.4545C28.8011 14.2605 28.8868 15.0714 28.9373 15.8848C28.9503 16.0825 28.9605 16.2803 28.9678 16.4782C28.973 16.5944 28.9733 16.7552 29 16.866V19.1481C28.9742 19.2517 28.97 19.4871 28.9649 19.604C28.9564 19.8028 28.9455 20.0016 28.9323 20.2001C28.8832 20.9771 28.8009 21.7516 28.6857 22.5215C28.6045 23.0676 28.5612 23.5138 28.2846 24.0079C27.9187 24.6584 27.3091 25.1368 26.5901 25.3374C26.171 25.4527 25.4542 25.5228 25.0093 25.5612C24.2767 25.6246 23.5424 25.6691 22.8076 25.6949C20.0432 25.8092 17.2755 25.8244 14.5101 25.7404C13.5733 25.7194 12.6371 25.6774 11.7022 25.6144C11.0234 25.5677 10.3381 25.5094 9.66736 25.3894C9.34763 25.3322 9.05051 25.225 8.76864 25.0615C8.24207 24.755 7.83014 24.2847 7.59564 23.7224C7.43221 23.3363 7.39662 22.9523 7.33434 22.539C7.2125 21.7183 7.12361 20.8932 7.06789 20.0654C7.05206 19.8446 7.04926 19.6224 7.03553 19.4018C7.02892 19.2956 7.03002 19.126 7 19.0266V16.8786ZM15.8143 21.3397L19.4369 19.2338L20.851 18.413C21.0062 18.3227 21.4042 18.077 21.5506 18.0202C21.3535 17.8833 21.0647 17.7264 20.8513 17.6021L19.6179 16.884L15.8188 14.6679C15.7996 14.766 15.8079 15.3058 15.8079 15.4465L15.8085 17.1816L15.8085 19.9772L15.8083 20.8446C15.8084 20.9885 15.8021 21.2021 15.8143 21.3397Z"
+                                    fill="#5546AA" />
+                            </svg>
+                            <span>Orange.Life!</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-name">об Orange.Life!</h3>
+                    <ul class="footer-col-list">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">О&nbsp;нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Orange Global</a>
+                        </li>
+                        <li>
+                            <a href="#">Команда</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Пресса о&nbsp;нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Ход работ на&nbsp;объектах</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-name">Инвесторам</h3>
+                    <ul class="footer-col-list">
+                        <li>
+                            <a href="#">Преимущества инвестиций</a>
+                        </li>
+                        <li>
+                            <a href="#">Программа доходности</a>
+                        </li>
+                        <li>
+                            <a href="#">Вопросы и&nbsp;ответы</a>
+                        </li>
+                        <li>
+                            <a href="#">Цифровые активы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-name">График работы</h3>
+                    <ul class="footer-col-list">
+                        <li>
+                            <p>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.00004 18C13.9706 18 18.0001 13.9707 18.0001 9.00004C18.0001 4.02945 13.9706 0 9.00004 0C4.02945 0 0 4.02945 0 9.00004C0 13.9707 4.02945 18 9.00004 18ZM9.93753 4.49979C9.93753 3.98202 9.5178 3.56229 9.00002 3.56229C8.48225 3.56229 8.06252 3.98202 8.06252 4.49979V8.99981C8.06252 9.51758 8.48225 9.93732 9.00002 9.93732H12.75C13.2678 9.93732 13.6875 9.51758 13.6875 8.99981C13.6875 8.48204 13.2678 8.06231 12.75 8.06231H9.93753V4.49979Z"
+                                        fill="white" />
+                                </svg>
+                                Преимущества инвестиций
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-col-name">Контакты</h3>
+                    <ul class="footer-col-list">
+                        <li>
+                            <a href="tel:88003333275" class="footer-contacts">
+                                <svg width="18" height="27" viewBox="0 0 18 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.4261 22.295C12.277 22.8448 13.291 23.0845 14.2975 22.9735C15.304 22.8627 16.2418 22.4081 16.953 21.6862L17.5748 21.0772C17.8474 20.798 18 20.4229 18 20.0325C18 19.6419 17.8474 19.2668 17.5748 18.9876L14.9357 16.3721C14.6592 16.1 14.287 15.9475 13.8994 15.9475C13.5117 15.9475 13.1396 16.1 12.8631 16.3721C12.5843 16.6451 12.2098 16.798 11.8199 16.798C11.4299 16.798 11.0555 16.6451 10.7767 16.3721L6.63149 12.2206C6.49321 12.0841 6.3834 11.9214 6.30844 11.7421C6.2335 11.5627 6.19491 11.3702 6.19491 11.1758C6.19491 10.9813 6.2335 10.7888 6.30844 10.6095C6.3834 10.4301 6.49321 10.2675 6.63149 10.131C6.90321 9.85405 7.05547 9.48133 7.05547 9.09307C7.05547 8.70483 6.90321 8.3321 6.63149 8.05518L4.00625 5.42588C3.72742 5.15286 3.35295 5 2.96294 5C2.57306 5 2.19859 5.15286 1.91976 5.42588L1.31189 6.04861C0.591112 6.76094 0.137203 7.70009 0.0264149 8.70818C-0.0842381 9.71627 0.154869 10.7318 0.70389 11.584C3.56416 15.8058 7.20344 19.4412 11.4261 22.295Z"
+                                        fill="white" />
+                                </svg>
+                                8 (800) 333-32-75
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:sales@orangelife.ru" class="footer-contacts">
+                                <svg width="18" height="29" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 3.53599C0 2.47087 0.863451 1.60742 1.92857 1.60742H16.0714C17.1365 1.60742 18 2.47087 18 3.53599V3.97564L9.49294 9.64802C9.37296 9.72517 9.1988 9.78023 8.99999 9.78023C8.80119 9.78023 8.62703 9.72517 8.50704 9.64802L0 3.97566V3.53599ZM0 5.9073V14.4646C0 15.5297 0.863451 16.3931 1.92857 16.3931H16.0714C17.1365 16.3931 18 15.5297 18 14.4646V5.90729L10.3801 10.9881L10.3727 10.9931C9.96813 11.2564 9.48231 11.3874 8.99999 11.3874C8.51768 11.3874 8.03188 11.2564 7.62733 10.993L7.61988 10.9882L0 5.9073Z"
+                                        fill="white" />
+                                </svg>
+                                sales@orangelife.ru
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-contacts">
+                                <svg width="18" height="27" viewBox="0 0 18 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.00059 0C13.7193 0 17.6515 4.0047 17.6515 8.81047C17.6515 10.3789 17.1222 11.9257 16.3824 13.3272C15.6397 14.7341 14.6565 16.0478 13.6798 17.1662C12.7012 18.2867 11.7123 19.2302 10.9419 19.8967C10.5571 20.2296 10.2203 20.4991 9.96064 20.6899C9.83241 20.7842 9.71226 20.867 9.60854 20.9304C9.55807 20.9612 9.49656 20.9968 9.43115 21.0276C9.39859 21.0428 9.35175 21.0633 9.29586 21.0815C9.25191 21.0958 9.14203 21.1293 9.00059 21.1293C8.85789 21.1293 8.74715 21.0952 8.70305 21.0808C8.64687 21.0622 8.59986 21.0415 8.56724 21.0261C8.5017 20.995 8.44014 20.9592 8.38969 20.9281C8.28601 20.8641 8.16591 20.7805 8.03775 20.6855C7.77825 20.4934 7.44157 20.2221 7.05697 19.887C6.28695 19.2164 5.2986 18.2681 4.32046 17.1445C3.34427 16.0232 2.36161 14.7084 1.61915 13.3047C0.879872 11.9071 0.349609 10.3666 0.349609 8.81047C0.349609 4.0047 4.28182 0 9.00059 0ZM9.00059 11.4418C7.57366 11.4418 6.41692 10.2637 6.41692 8.81047C6.41692 7.35725 7.57366 6.17917 9.00059 6.17917C10.4275 6.17917 11.5842 7.35725 11.5842 8.81047C11.5842 10.2637 10.4275 11.4418 9.00059 11.4418Z"
+                                        fill="white" />
+                                </svg>
+                                Санкт-Петербург, Масляный&nbsp;пер., д.7
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="footer-btn btn-white">Обратный звонок</button>
+                </div>
+            </div>
+            <a href="https://kdm1.ru/" class="footer-kdm" target="_blank">
+                <img src="img/aftor.svg" alt="Логотип">
+                <span>Сделано в «Клинике <br>доброго маркетолога»</span>
+            </a>
+            <div class="footer-bottom">
+                <a href="#" class="footer-bottom-link footer-bottom-link--first">2026 © Сайт</a>
+                <a href="#" class="footer-bottom-link">Политика конфиденциальности</a>
+                <a href="#" class="footer-bottom-link">Обработка персональных данных</a>
+                <a href="#" class="footer-bottom-link">Карта сайта</a>
+                <a href="#" class="footer-bottom-link">Политика обработки cookies</a>
+                <a href="#" class="footer-bottom-link">Согласие на&nbsp;рассылки</a>
+                <a href="#" class="footer-bottom-link">Все права защищены</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+    <div class="modal fade" id="apartmentsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content apartments-modal">
+
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h2 class="apartments-modal-title">
+                    Рассчитаем доход<br>
+                    с апартамента
+                </h2>
+
+                <p class="apartments-modal-text">
+                    0 минут — и цифры у вас
+                </p>
+
+                <form class="how-form">
+                    <div class="how-inputs">
+                        <input type="text" class="form-control" name="name" placeholder="Имя">
+
+                        <input type="tel" class="form-control" name="phone" placeholder="*Телефон" required>
+
+                        <input type="email" class="form-control" name="email" placeholder="Почта">
+                    </div>
+
+                    <button type="submit" class="how-btn btn-orange">
+                        Подобрать квартиру
+                    </button>
+
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="agreement" type="checkbox" required checked>
+
+                        <span>
+                            Нажимая на кнопку, я соглашаюсь с
+                            <a href="#">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="budgetModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content apartments-modal">
+
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h2 class="apartments-modal-title title-two">
+                    Рассчитаем доход<br>
+                    <span>под ваш бюджет</span>
+                </h2>
+
+                <p class="apartments-modal-text">
+                    За&nbsp;30&nbsp;минут подберем помещение и&nbsp;покажем цифры
+                </p>
+
+                <form class="how-form">
+                    <div class="how-inputs">
+                        <input type="text" class="form-control" name="name" placeholder="Имя">
+
+                        <input type="tel" class="form-control" name="phone" placeholder="*Телефон" required>
+
+                        <input type="email" class="form-control" name="email" placeholder="Почта">
+                    </div>
+
+                    <button type="submit" class="how-btn btn-orange">
+                        Получить предложение
+                    </button>
+
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="agreement" type="checkbox" required checked>
+
+                        <span>
+                            Нажимая на кнопку, я соглашаюсь с
+                            <a href="#">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="flatModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content apartments-modal">
+
+                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h2 class="apartments-modal-title title-two">
+                    Квартира для жизни <span>или аренды</span>
+                </h2>
+
+                <p class="apartments-modal-text">
+                    За&nbsp;30&nbsp;минут подберем идеальный вариант
+                </p>
+
+                <form class="how-form">
+                    <div class="how-inputs">
+                        <input type="text" class="form-control" name="name" placeholder="Имя">
+
+                        <input type="tel" class="form-control" name="phone" placeholder="*Телефон" required>
+
+                        <input type="email" class="form-control" name="email" placeholder="Почта">
+                    </div>
+
+                    <button type="submit" class="how-btn btn-orange">
+                        Подобрать квартиру
+                    </button>
+
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="agreement" type="checkbox" required checked>
+
+                        <span>
+                            Нажимая на кнопку, я соглашаюсь с
+                            <a href="#">политикой конфиденциальности</a>
+                        </span>
+                    </label>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
