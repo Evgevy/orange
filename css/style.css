@@ -2214,6 +2214,152 @@ ul {
     font-weight: 600;
 }
 
+.baza-content-col.tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.baza-tabs {
+    margin-top: auto;
+}
+
+.baza-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.baza-nav .nav-link {
+    border: 1px solid rgba(85, 70, 170, 1);
+    padding: 20px 30px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.baza-nav .nav-link:hover {
+    color:rgba(35, 39, 42, 1) !important;
+}
+
+.baza-nav .nav-link.active:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.baza-nav .nav-link.active {
+    background: rgba(85, 70, 170, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.invest-subtitle {
+    font-size: 50px !important;
+}
+
+.invest-buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.invest-about {
+    width: 100%;
+    padding: 20px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.invest-about:hover {
+    opacity: 0.8;
+}
+
+.invest-present {
+    width: 100%;
+    padding: 20px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.invest-present:hover {
+    opacity: 0.8;
+}
+
+.new {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+
+.steps {
+    padding: 50px 0;
+    background: rgba(255, 255, 255, 1);
+}
+
+.steps-title {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    margin: 0 0 60px;
+}
+
+.steps-img-card {
+
+}
+
+.steps-text-card {
+    background: rgba(238, 238, 238, 1);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.steps-badge {
+    background: rgba(235, 100, 35, 1);
+    padding: 16px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    width: fit-content;
+    margin-bottom: 60px;
+}
+
+.steps-desc {
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.steps-img-card {
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+.steps-img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
 @media screen and (max-width: 1800px) {
     .logo img {
         height: 40px;
@@ -2341,6 +2487,15 @@ ul {
         background: rgba(238, 238, 238, 1);
         padding: 20px 15px;
         border-radius: 24px;
+    }
+
+    .baza-nav .nav-link {
+        padding: 18px 15px;
+        font-size: 18px;
+    }
+
+    .invest-subtitle {
+        font-size: 40px !important;
     }
 }
 
@@ -2537,6 +2692,23 @@ ul {
 
     .scene-info ul li {
         font-size: 20px;
+    }
+
+    .baza-nav {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .steps-text-card {
+        padding: 30px;
+    }
+
+    .steps-badge {
+        font-size: 28px;
+    }
+
+    .steps-desc {
+        font-size: 22px;
     }
     
 }
@@ -2807,6 +2979,23 @@ ul {
     .tab-content--grid .invest-item-title span {
         font-size: 30px;
     }
+
+    .invest-present, .invest-about {
+        font-size: 20px;
+    }
+
+    .new {
+        font-size: 20px;
+    }
+
+    .steps-title {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .steps-badge {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -2842,6 +3031,10 @@ ul {
     }
 
     .invest--two .invest-list {
+        flex-direction: column-reverse;
+    }
+
+    .row.invest-list.invest-list--two.mb-4 {
         flex-direction: column-reverse;
     }
 
@@ -2910,6 +3103,14 @@ ul {
         grid-template-columns: 1fr;
         margin-bottom: 20px;
         width: 100%;
+    }
+
+    .invest-subtitle {
+        margin: 0 0 30px;
+    }
+
+    .steps-list {
+        gap: 20px;
     }
 }
 
@@ -3202,6 +3403,22 @@ ul {
     .tab-content--grid .invest-item-title span {
         font-size: 24px;
     }
+
+    .invest-subtitle {
+        font-size: 30px !important;
+    }
+
+    .invest-buttons {
+        flex-direction: column;
+    }
+
+    .steps-title {
+        font-size: 40px;
+    }
+
+    .steps-text-card {
+        padding: 30px 20px;
+    }
 }
 
 
@@ -3269,6 +3486,10 @@ ul {
 
     .hero-text {
         font-size: 18px;
+    }
+
+    .hero-text br {
+        display: none;
     }
 
     .hero-list li {
@@ -3694,6 +3915,37 @@ ul {
     .marquee-content--three {
         padding: 30px 0;
     }
+
+    .invest-subtitle {
+        font-size: 25px !important;
+    }
+
+    .invest-buttons {
+        margin-top: 30px;
+    }
+
+    .invest-about, .invest-present {
+        font-size: 18px;
+    }
+
+    .steps {
+        padding: 30px 0;
+    }
+
+    .steps-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .steps-badge {
+        font-size: 20px;
+        padding: 13px 20px;
+        border-radius: 15px;
+    }
+
+    .steps-desc {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -3738,6 +3990,10 @@ ul {
     .location-distance svg {
         width: 14px;
         height: 14px;
+    }
+
+    .steps-badge {
+        margin-bottom: 30px;
     }
 }
 
