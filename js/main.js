@@ -177,4 +177,31 @@ document.addEventListener("DOMContentLoaded", function () {
     
     });
 
+    const locationButtons = document.querySelectorAll('.locations-btn');
+
+    if (locationButtons) {
+        locationButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                
+                const wrapper = this.closest('.baza-image-wrapper');
+                if (!wrapper) return;
+    
+                
+                const panel = wrapper.querySelector('.locations-panel');
+                if (!panel) return;
+    
+                
+                const isActive = panel.classList.toggle('active');
+    
+                
+                if (isActive) {
+                    this.textContent = 'Скрыть список локаций';
+                } else {
+                    this.textContent = 'Показать список локаций';
+                }
+            });
+        });
+    }
+    
+
 });

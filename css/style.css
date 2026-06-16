@@ -1287,7 +1287,7 @@ ul {
 }
 
 .how-title {
-    font-size: 68px;
+    font-size: 60px;
     line-height: 110.00000000000001%;
     margin: 0 0 24px;
 }
@@ -1644,6 +1644,9 @@ ul {
 }
 
 .locations-panel {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     position: absolute;
     top: 96px;
     right: 20px;
@@ -1657,6 +1660,11 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.locations-panel.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -2529,7 +2537,7 @@ ul {
     }
 
     .how-title {
-        font-size: 52px;
+        font-size: 44px;
     }
     
 
@@ -2591,9 +2599,6 @@ ul {
         font-size: 40px;
     }
 
-    .how-title {
-        font-size: 50px;
-    }
 
     .how-right img {
         width: 105%;
@@ -3040,6 +3045,10 @@ ul {
 
     .how.how--three .how-title {
         font-size: 45px;
+    }
+
+    .how-title {
+        font-size: 32px;
     }
 
     .format-title {
@@ -3791,7 +3800,7 @@ ul {
     }
 
     .how-title {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .how-text {
@@ -4186,7 +4195,7 @@ ul {
     }
 
     .how-title {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .how-title.how-title--small {
