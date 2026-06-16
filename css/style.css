@@ -2255,7 +2255,7 @@ ul {
 
 
 .invest-subtitle {
-    font-size: 50px !important;
+    font-size: 48px !important;
 }
 
 .invest-buttons {
@@ -2357,6 +2357,81 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+    display: block;
+}
+
+.relize .hero-btn {
+    max-width: fit-content;
+}
+
+.what-small {
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 20px;
+    display: block;
+}
+
+.what-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.what-link {
+    max-width: 460px;
+    width: 100%;
+    border-radius: 100px;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    transition: .3s;
+}
+
+.what-link:hover {
+    opacity: 0.8;
+}
+
+.invest-number-texts {
+    margin-bottom: 50px;
+}
+
+.invest-blue {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(85, 70, 170, 1);
+    margin-top: 16px;
+    display: block;
+}
+
+.invest-orange {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(235, 100, 35, 1);
+    margin: 16px 0 0px;
+    display: block;
+}
+
+.invest-banner-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.invest-banner-texts span {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
     display: block;
 }
 
@@ -2710,6 +2785,22 @@ ul {
     .steps-desc {
         font-size: 22px;
     }
+
+    .what-texts .what-text br {
+        display: none;
+    }
+
+    .invest-blue {
+        font-size: 22px;
+    }
+
+    .invest-number-texts {
+        margin-bottom: 30px;
+    }
+
+    .invest-orange {
+        font-size: 20px;
+    }
     
 }
 
@@ -2996,6 +3087,14 @@ ul {
     .steps-badge {
         font-size: 24px;
     }
+
+    .what-small {
+        font-size: 22px;
+    }
+
+    .what-texts {
+        padding: 0 40px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -3111,6 +3210,10 @@ ul {
 
     .steps-list {
         gap: 20px;
+    }
+
+    .relize {
+        flex-direction: column;
     }
 }
 
@@ -3418,6 +3521,32 @@ ul {
 
     .steps-text-card {
         padding: 30px 20px;
+    }
+
+    .what-small {
+        font-size: 18px;
+    }
+
+    .what-texts {
+        padding: 0;
+    }
+
+    .what-link {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .invest-blue {
+        font-size: 18px;
+        margin-top: -20px;
+    }
+
+    .invest-orange {
+        font-size: 17px;
+    }
+
+    .invest-banner-texts span {
+        font-size: 24px;
     }
 }
 
@@ -3945,6 +4074,14 @@ ul {
 
     .steps-desc {
         font-size: 18px;
+    }
+
+    .what-small {
+        font-size: 16px;
+    }
+
+    .invest-banner-texts span {
+        font-size: 20px;
     }
 }
 
